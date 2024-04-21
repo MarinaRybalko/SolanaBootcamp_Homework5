@@ -1,11 +1,10 @@
-// variables5.rs
-// Make me compile! Execute the command `rustlings hint variables5` if you want a hint :)
-
-// I AM NOT DONE
+// primitive_types5.rs
+// Destructure the `cat` tuple so that the println will work.
+// Execute `rustlings hint primitive_types5` for hints!
 
 fn main() {
-    let number = "T-H-R-E-E"; // don't change this line
-    println!("Spell a Number : {}", number);
-    number = 3; // don't rename this variable
-    println!("Number plus two is : {}", number + 2);
+    let cat = ("Furry McFurson", 3.5);
+    let (name, age) = cat;
+
+    println!("{} is {} years old.", name, age);
 }
